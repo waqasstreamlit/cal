@@ -8,7 +8,7 @@ num1 = st.number_input('Enter the first number value here', value=0.0)
 num2 = st.number_input('Enter the second number value here', value=0.0)
 
 # Drop-down menu for operation selection
-operation = st.selectbox('Choose an operation to calculate', ['Addition', 'Subtraction', 'Multiplication', 'Division'])
+operation = st.selectbox('Choose an operation to calculate', ['Addition', 'Subtraction', 'Multiplication', 'Division','Compare'])
 
 # Calculate result based on selected operation
 def calculate_result():
@@ -24,6 +24,13 @@ def calculate_result():
         result = num1 / num2
     else:
         result = 'Error: Division by zero'
+  elif operation == 'Compare':
+   if num1 > num2
+    result = 'Number 1 is greater then Number 2'
+   elif num2 > num1
+    result = 'Number 2 is greater then Number 1'
+   elif num2 == num1
+    result = 'Both numbers values are equal'
  return result
 
 # Add a button
