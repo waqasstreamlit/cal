@@ -13,18 +13,18 @@ operation = st.selectbox('Choose an operation to calculate', ['Addition', 'Subtr
 # Calculate result based on selected operation
 def calculate_result():
     result = None
-if operation == 'Addition':
+ if operation == 'Addition':
     result = num1 + num2
-elif operation == 'Subtraction':
+ elif operation == 'Subtraction':
     result = num1 - num2
-elif operation == 'Multiplication':
+ elif operation == 'Multiplication':
     result = num1 * num2
-elif operation == 'Division':
+ elif operation == 'Division':
     if num2 != 0:
         result = num1 / num2
     else:
         result = 'Error: Division by zero'
-return result
+ return result
 
 # Add a button
 if st.button("Calculate"):
