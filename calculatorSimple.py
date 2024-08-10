@@ -24,7 +24,7 @@ def calculate_result():
         result = num1 / num2
     else:
         result = 'Error: Division by zero'
-  elif operation == 'Compare':
+ elif operation == 'Compare':
    if num1 > num2
     result = 'Number 1 is greater then Number 2'
    elif num2 > num1
