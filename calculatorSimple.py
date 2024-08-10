@@ -11,8 +11,8 @@ num2 = st.number_input('Enter the second number value here', value=0.0)
 operation = st.selectbox('Choose an operation to calculate', ['Addition', 'Subtraction', 'Multiplication', 'Division'])
 
 # Calculate result based on selected operation
-result = None
-
+def calculate_result():
+    result = None
 if operation == 'Addition':
     result = num1 + num2
 elif operation == 'Subtraction':
@@ -24,8 +24,16 @@ elif operation == 'Division':
         result = num1 / num2
     else:
         result = 'Error: Division by zero'
+return result
 
-st.write("Result: ",result)
+# Add a button
+if st.button("Calculate"):
+    # Call the calculate_result function when the button is clicked
+    result = calculate_result()
+    st.write(f"The result is: {result}")
+
+
+#st.write("Result: ",result)
 # Display the result
 #if result is not None:
     
