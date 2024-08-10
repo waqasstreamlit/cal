@@ -25,11 +25,11 @@ def calculate_result():
     else:
         result = 'Error: Division by zero'
  elif operation == 'Compare':
-   if num1 > num2
+   if num1 > num2:
     result = 'Number 1 is greater then Number 2'
-   elif num2 > num1
+   elif num2 > num1:
     result = 'Number 2 is greater then Number 1'
-   elif num2 == num1
+   elif num2 == num1:
     result = 'Both numbers values are equal'
  return result
 
