@@ -12,7 +12,7 @@ operation = st.selectbox('Choose an operation to calculate', ['Addition', 'Subtr
 
 # Calculate result based on selected operation
 def calculate_result():
-result = None
+ result = None
  if operation == 'Addition':
     result = num1 + num2
  elif operation == 'Subtraction':
