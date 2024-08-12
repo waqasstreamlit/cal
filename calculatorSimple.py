@@ -2,6 +2,7 @@ import streamlit as st
 
 # Title of the app
 st.title('Simple Calculator using Python By Waqas Farooq')
+st.title('It includes addition, multiplication, subtraction, comparison')
 
 # Input fields for numbers
 num1 = st.number_input('Enter the first number value here', value=0.0)
